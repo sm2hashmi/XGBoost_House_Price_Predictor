@@ -1,6 +1,5 @@
 # ============================================
 # FASTAPI BACKEND - Ames Housing Predictor
-# FINAL: Uses NumPy array + bool conversion
 # ============================================
 
 from fastapi import FastAPI, HTTPException
@@ -63,7 +62,7 @@ async def predict(features: HouseFeatures):
         input_dict = features.dict()
         threshold = input_dict.pop("threshold", 0.5)
         
-        # ---------- BUILD NUMPY ARRAY (bypasses all XGBoost dtype issues) ----------
+        # Build NUMPY ARRAY to bypasses all XGBoost dtype issues
         input_array = np.array([[
             input_dict["Gr_Liv_Area"],
             input_dict["Year_Built"],
@@ -81,7 +80,7 @@ async def predict(features: HouseFeatures):
         # Predict
         prediction = model.predict(input_array)[0]
         
-        # ---------- CONVERT TO PYTHON BOOL (Fixes serialization error) ----------
+        # CONVERT TO PYTHON BOOL (Fixes serialization error)
         is_anomaly = bool(prediction > 600000 or prediction < 50000)
         
         return {

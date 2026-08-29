@@ -80,10 +80,8 @@ with col2:
 st.markdown("---")
 
 # ---------- API CONFIG ----------
-# For local development:
+
 API_URL = "https://xgboost-house-api.onrender.com/predict"
-# For deployment, change to your Render URL:
-# API_URL = "https://your-api.onrender.com/predict"
 
 # ---------- FEATURE DEFINITIONS ----------
 feature_defs = [
@@ -203,7 +201,7 @@ if st.button("🔮 Estimate Price", type="primary", use_container_width=True):
             st.subheader("🏡 What's Driving This Estimate?")
             st.markdown("These are the top factors influencing the predicted price (in plain English).")
 
-            # Map technical names to user-friendly names (NO ML JARGON!)
+            # Map technical names to user-friendly names 
             importance_data = {
                 "Gr_Liv_Area": {"friendly": "Living Area (sq ft)", "icon": "📐"},
                 "Overall_Qual": {"friendly": "Overall Quality", "icon": "⭐"},
@@ -218,7 +216,7 @@ if st.button("🔮 Estimate Price", type="primary", use_container_width=True):
                 "Overall_Cond": {"friendly": "Overall Condition", "icon": "🔧"}
             }
 
-            # The actual importance scores (from your model's feature_importances_)
+            # The actual importance scores 
             raw_importance = {
                 "Gr_Liv_Area": 0.25,
                 "Overall_Qual": 0.22,
@@ -233,7 +231,7 @@ if st.button("🔮 Estimate Price", type="primary", use_container_width=True):
                 "Overall_Cond": 0.00
             }
 
-            # Sort and take only the TOP 5 (too many bars confuse people)
+            # Sort and take only the TOP 5 
             sorted_items = sorted(raw_importance.items(), key=lambda x: x[1], reverse=True)[:5]
 
             # Display as horizontal bars with friendly names and icons
@@ -242,8 +240,8 @@ if st.button("🔮 Estimate Price", type="primary", use_container_width=True):
                 'Influence': [v for k, v in sorted_items]
             })
 
-            # ---------- FIXED: Use Altair for a clean horizontal bar chart ----------
-            # This puts feature names on the Y-axis (always horizontal) and gives a clear X-axis label
+            # Use Altair for a clean horizontal bar chart 
+            
             chart = alt.Chart(df_drivers).mark_bar(
                 color="#FF4B4B",
                 cornerRadiusTopRight=3,
