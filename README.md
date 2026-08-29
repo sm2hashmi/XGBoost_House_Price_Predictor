@@ -32,4 +32,4 @@ Wait for it to load, then use the Streamlit app normally.
 
 1. Clone and navigate:
 ```bash
-cd Ames_Housing_Predictor
+cd XGBoost_House_Price_Predictor
