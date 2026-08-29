@@ -81,7 +81,7 @@ st.markdown("---")
 
 # ---------- API CONFIG ----------
 # For local development:
-API_URL = "http://localhost:8000/predict"
+API_URL = "https://xgboost-house-api.onrender.com/predict"
 # For deployment, change to your Render URL:
 # API_URL = "https://your-api.onrender.com/predict"
 
