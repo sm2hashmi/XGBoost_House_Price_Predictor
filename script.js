@@ -1,6 +1,5 @@
 // ================================================================
 // script.js - HomeWise Property Valuation App
-// All application logic
 // ================================================================
 
 // ================================================================
@@ -46,7 +45,7 @@ function initApp() {
     // ================================================================
     // 2. CONFIGURATION
     // ================================================================
-    // !!! UPDATE THIS TO YOUR LIVE BACKEND URL !!!
+    
     const API_URL = "https://xgboost-house-api.onrender.com/predict";
 
     const STEPS = [
