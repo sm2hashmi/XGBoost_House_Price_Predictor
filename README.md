@@ -5,7 +5,7 @@ A professional, interactive property valuation tool powered by **XGBoost** machi
 
 ## 🚀 Live Demo
 - **Frontend (HTML/CSS/JS):** [https://smmhashmi.github.io/XGBoost_House_Predictor/](https://sm2hashmi.github.io/XGBoost_House_Price_Predictor/)
-- **Backend (FastAPI):** https://xgboost-house-api.onrender.com
+- **Backend (FastAPI):** [https://xgboost-house-api.onrender.com](https://xgboost-house-api.onrender.com/)
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS (Tailwind), JavaScript (noUiSlider, Chart.js)
