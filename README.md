@@ -4,7 +4,7 @@
 A professional, interactive property valuation tool powered by **XGBoost** machine learning. Features a pure HTML/CSS/JS frontend with a wizard-style user interface and a FastAPI backend.
 
 ## 🚀 Live Demo
-- **Frontend (HTML/CSS/JS):** https://smmhashmi.github.io/XGBoost_House_Predictor/
+- **Frontend (HTML/CSS/JS):** [https://smmhashmi.github.io/XGBoost_House_Predictor/](https://sm2hashmi.github.io/XGBoost_House_Price_Predictor/)
 - **Backend (FastAPI):** https://xgboost-house-api.onrender.com
 
 ## 🛠️ Tech Stack
