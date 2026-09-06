@@ -69,7 +69,7 @@ uvicorn main:app --reload --port 8000
 ## ⚠️ Important Notes
 
 ### Production Readiness
-This project is a **proof of concept** and is intended for **educational and demonstration purposes only**. It should not be deployed in production environments without significant hardening and optimization.
+This project is a **prototype** and is intended for **educational and demonstration purposes only**. It should not be deployed in production environments without significant hardening and optimization.
 
 ### CDN Usage
 The frontend relies on external CDN services (Tailwind CSS, noUiSlider, Chart.js, Font Awesome) for convenience and rapid prototyping. While this approach is suitable for development and demonstration, it is **not recommended for production deployments** due to potential security, reliability, and performance concerns.
